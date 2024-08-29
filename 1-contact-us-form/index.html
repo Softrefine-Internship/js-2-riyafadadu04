@@ -3,13 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <section class="contact-sec">
+      <div class="color-1"></div>
+      <div class="color-2"></div>
+      <div class="contact">
+        <div class="contact-head">
+          <h1 class="contact-h1">Contact Sales</h1>
+          <p class="contact-data">
+            Aute magna irure deserunt venlam htenvh deserunt venlam het
+            hivolupate.
+          </p>
+        </div>
+        <form action="#" method="post">
+          <div class="inputs">
+            <div class="name">
+              <div class="first-name">
+                <label for="fname" class="label">First Name</label><br />
+                <input
+                  class="input fname"
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  required
+                />
+              </div>
+              <div class="first-name">
+                <label for="lname" class="label">Last Name</label><br />
+                <input
+                  class="input fname"
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  required
+                />
+              </div>
+            </div>
+            <div class="company">
+              <label for="company" class="label">Company</label><br />
+              <input
+                class="input input-size"
+                type="text"
+                name="company"
+                id="company"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email" class="label">Email</label><br />
+              <input
+                class="input input-size"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="phone">
+              <label for="phone" class="label">Phone Number</label><br />
+              <div class="list input">
+                <div class="country">
+                  <select name="country" class="coun" id="country">
+                    <option value="usa">US</option>
+                    <option value="canada">IND</option>
+                    <option value="uk">UK</option>
+                  </select>
+                </div>
+                <div class="number">
+                  <input
+                    type="number"
+                    class="num"
+                    name="phone"
+                    id="phone"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <label for="message" class="label">Message</label><br />
+              <textarea
+                class="input input-size"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="terms">
+              <div class="checkbox">
+                <input type="checkbox" class="check1 label" />
+              </div>
+              <div>
+                <label for="terms">
+                  By selecting this, you agree to our
+                  <span>privacy policy</span>
+                </label>
+              </div>
+            </div>
+            <div class="submit">
+              <button type="submit" class="btn">Let's talk</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

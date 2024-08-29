@@ -3,13 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <title>Modal</title>
+    <script src="https://kit.fontawesome.com/0e9195495d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="modal-container">
+      <div class="modal hidden">
+        <div class="modal-content">
+          <div class="warning">
+            <i class="fa-solid warning-icon fa-triangle-exclamation"></i>
+          </div>
+          <div class="modal-box">
+            <h3 class="modal-head">Deactivate Account</h3>
+            <p class="modal-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci nobis consequatur ut vitae error, quasi itaque tenetur mollitia vel repellendus excepturi a? Magnam, odit animi delectus voluptatibus ex eum?</p>
+          </div>
+          <div class="modal-btns">
+            <button class="cancel-btn modal-btn">Cancel</button>
+            <button class="confirm-btn modal-btn">Deactivate</button>
+          </div>
+          <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+      <button class="deactive-btn">Deactivate Account</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
