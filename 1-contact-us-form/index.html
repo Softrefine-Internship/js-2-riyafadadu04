@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <section class="contact-sec">
@@ -18,95 +19,102 @@
             hivolupate.
           </p>
         </div>
-        <form action="#" method="post">
-          <div class="inputs">
-            <div class="name">
-              <div class="first-name">
-                <label for="fname" class="label">First Name</label><br />
-                <input
-                  class="input fname"
-                  type="text"
-                  name="fname"
-                  id="fname"
-                  required
-                />
-              </div>
-              <div class="first-name">
-                <label for="lname" class="label">Last Name</label><br />
-                <input
-                  class="input fname"
-                  type="text"
-                  name="lname"
-                  id="lname"
-                  required
-                />
-              </div>
-            </div>
-            <div class="company">
-              <label for="company" class="label">Company</label><br />
+        <form name="myForm" class="inputs" onsubmit="return validateform()">
+          <div class="name">
+            <div class="first-name">
+              <label for="fname" class="label">First Name</label><br />
               <input
-                class="input input-size"
+                class="input fname"
                 type="text"
-                name="company"
-                id="company"
+                name="fname"
+                id="fname"
                 required
               />
+              <p class="fname-error error hide">First name is required</p>
             </div>
-            <div class="email">
-              <label for="email" class="label">Email</label><br />
+            <div class="first-name">
+              <label for="lname" class="label">Last Name</label><br />
               <input
-                class="input input-size"
-                type="email"
-                name="email"
-                id="email"
+                class="input fname lname"
+                type="text"
+                name="lname"
+                id="lname"
                 required
               />
+              <p class="lname-error error hide">Last name is required</p>
             </div>
-            <div class="phone">
-              <label for="phone" class="label">Phone Number</label><br />
-              <div class="list input">
-                <div class="country">
-                  <select name="country" class="coun" id="country">
-                    <option value="usa">US</option>
-                    <option value="canada">IND</option>
-                    <option value="uk">UK</option>
-                  </select>
-                </div>
-                <div class="number">
-                  <input
-                    type="number"
-                    class="num"
-                    name="phone"
-                    id="phone"
-                    required
-                  />
-                </div>
+          </div>
+          <div class="company">
+            <label for="company" class="label">Company</label><br />
+            <input
+              class="input input-size company-input"
+              type="text"
+              name="company"
+              id="company"
+              required
+            />
+            <p class="company-error error hide">Company name is required</p>
+          </div>
+          <div class="email">
+            <label for="email" class="label">Email</label><br />
+            <input
+              class="input input-size email-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <p class="email-error error hide">Email is required</p>
+          </div>
+          <div class="phone">
+            <label for="phone" class="label">Phone Number</label><br />
+            <div class="list input phone-input">
+              <div class="country">
+                <select name="country" class="coun" id="country">
+                  <option value="usa">US</option>
+                  <option value="canada">IND</option>
+                  <option value="uk">UK</option>
+                </select>
+              </div>
+              <div class="number">
+                <input
+                  type="number"
+                  class="num"
+                  name="phone"
+                  id="phone"
+                  required
+                />
               </div>
             </div>
-            <div class="message">
-              <label for="message" class="label">Message</label><br />
-              <textarea
-                class="input input-size"
-                name="message"
-                id="message"
-                cols="30"
-                rows="5"
-              ></textarea>
+            <p class="phone-error error hide">Phone number is required</p>
+          </div>
+          <div class="message">
+            <label for="message" class="label">Message</label><br />
+            <textarea
+              class="input input-size message-input"
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <p class="message-error error hide">Message name is required</p>
+          </div>
+          <div class="terms">
+            <div class="checkbox">
+              <input type="checkbox" class="check1 label" />
             </div>
-            <div class="terms">
-              <div class="checkbox">
-                <input type="checkbox" class="check1 label" />
-              </div>
-              <div>
-                <label for="terms">
-                  By selecting this, you agree to our
-                  <span>privacy policy</span>
-                </label>
-              </div>
+            <div>
+              <label for="terms">
+                By selecting this, you agree to our
+                <span>privacy policy</span>
+              </label>
             </div>
-            <div class="submit">
-              <button type="submit" class="btn">Let's talk</button>
-            </div>
+          </div>
+          <p class="term-error error hide">
+            Please agree to our terms and conditions
+          </p>
+          <div class="submit">
+            <button type="submit" class="btn">Let's talk</button>
           </div>
         </form>
       </div>

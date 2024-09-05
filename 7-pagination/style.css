@@ -37,6 +37,10 @@
     cursor: pointer;
   }
 
+  .p-btn:hover{
+    color: #525bfd;
+  }
+
   .p-btn:not(:last-child){
     border-right: 1px solid #ccc;
   }
@@ -45,4 +49,16 @@
     background: #e4efffce;
     color: #0410f8;
   }
+
+  .hide{
+    display: none;
+  }
   
+  .visible{
+    display: block;
+  }
+
+  .disable {
+    cursor: not-allowed;
+    color: #ccc;
+  }

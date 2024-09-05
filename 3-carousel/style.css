@@ -23,9 +23,21 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
+  object-fit: cover;
   position: relative;
   z-index: -2;
+  animation: ani .5s;
 }
+
+@keyframes ani {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .arr-btn {
   position: absolute;
   top: 50%;
@@ -67,4 +79,24 @@ body {
 }
 .active-dot {
   background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .arr-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .arr-btn {
+    width: 30px;
+    height: 30px;
+    font-size: .8rem;
+  }
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
 }
